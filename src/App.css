@@ -4,6 +4,11 @@
 body{
   background:linear-gradient( to right,rgb(64, 234, 217) ,rgb(77, 118, 175),rgb(64, 234, 217) );
 }
+#nav{
+  position: sticky;
+  top :0px;
+  left: 0;
+}
 .img{
   height: 250px;
  width: 300px; 
@@ -25,11 +30,23 @@ body{
   color:darkblue;
   height:60px;
   }
+  #tabbtn{
+   display: none;
+     }
 @media screen and (max-width:420px) {
   .navbar{
-  background-color: red; 
+   height: 220px;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
-  
+  #tabbtn{
+ display: inline;
+  }
+  .asdf{
+color: black;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
 }

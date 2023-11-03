@@ -1,17 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addtocart } from '../features/CartSlice';
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardImage,
-  MDBBtn,
-  MDBContainer,
-  MDBRow,
-  MDBCol
-} from 'mdb-react-ui-kit';
 
 export default function Iphone() {
    const items=useSelector((state)=>state)

@@ -9,17 +9,19 @@ useEffect(()=>{
 dispatch(getcarttotal())
 },[cart])
     return(
-        <div className="navbar"  >
-<div>Navbar</div>
+        <div className="navbar" id="nav"  >
+<div>Mobile Point</div>
 
-<div className="asdf" style={{display:"flex"}}>
+<div className="asdf"  style={{display:"flex"}}>
 <Link  to="/" style={{color:"darkblue"}}>All Products</Link> &nbsp;
 <Link  to="/iphone" style={{color:"darkblue"}}>Iphone</Link> &nbsp;
 <Link  to="/samsung" style={{color:"darkblue"}}>Samsung</Link> &nbsp;
 </div>
 
 <div>
+
 <Link to="/cart" style={{color:"darkblue"}}>Cart({totalQuantity})</Link>
+ <Link to="/" state={{color:"darkblue"}} id="tabbtn"> Tab</Link>   
       </div>
 
         </div>
